@@ -14,3 +14,22 @@ h1 {
 #submitStyle {
   text-align: center;
 }
+
+body {
+  background: rgb(100, 100, 101); /*그라데이션 배경 삽입*/
+  background: linear-gradient(
+    90deg,
+    rgba(100, 100, 101, 1) 0%,
+    rgba(134, 122, 122, 1) 15%,
+    rgba(144, 134, 134, 1) 35%,
+    rgba(126, 140, 145, 1) 58%,
+    rgba(95, 133, 140, 1) 85%,
+    rgba(83, 98, 101, 1) 100%
+  );
+  color: white;
+}
+
+.div-style {
+  justify-content: center;
+  align-items: center;
+}
