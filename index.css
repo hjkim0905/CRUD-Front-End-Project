@@ -70,12 +70,23 @@ table td {
 }
 
 .title-div {
-  background-color: aquamarine;
   width: 50%;
 }
 
 .addButton-div {
-  background-color: rosybrown;
   width: 50%;
   text-align: right;
+}
+
+.add-button {
+  width: 100px;
+  height: 48px;
+  padding: 8px 16px 8px 16px;
+  border: 1px solid #007bff;
+  background-color: #007bff;
+  color: #ffffff;
+  border-radius: 4px;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
