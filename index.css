@@ -1,0 +1,34 @@
+table {
+  border-collapse: collapse;
+}
+
+.table-sm th,
+.table-sm td {
+  padding: 0.3rem;
+  text-align: center;
+}
+
+.table-sm th {
+  font-size: 140%;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.table {
+  width: 100%;
+  margin-bottom: 1rem;
+  color: #212529;
+}
+
+.title-name {
+  text-align: left;
+  font-size: 200%;
+  font-weight: 900;
+}
+
+table th,
+table td {
+  border: 1px solid #ddd;
+}
