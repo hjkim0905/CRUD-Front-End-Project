@@ -63,3 +63,19 @@ table td {
   margin-right: auto;
   margin-left: auto;
 }
+
+.div-top {
+  display: flex;
+  align-items: center;
+}
+
+.title-div {
+  background-color: aquamarine;
+  width: 50%;
+}
+
+.addButton-div {
+  background-color: rosybrown;
+  width: 50%;
+  text-align: right;
+}
