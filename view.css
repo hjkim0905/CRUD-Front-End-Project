@@ -79,3 +79,8 @@ button {
   height: 20px;
   padding: 0 0 0 0;
 }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
