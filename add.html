@@ -9,11 +9,17 @@
   <body>
     <div class="div-style">
       <h1>정보 추가</h1>
-      <form action="" method="get">
+      <form
+        name="clubInfo"
+        action="/club_info.php"
+        method="post"
+        onsubmit="return Checkform()"
+      >
         <fieldset>
           <legend>개인정보</legend>
-          <label>이름: </label><input type="text" /><br /><br />
-          <label>학번: </label><input type="text" /><br /><br />
+          <label>이름: </label><input name="name" type="text" /><br /><br />
+          <label>학번: </label
+          ><input name="studentNumber" type="text" /><br /><br />
           <label>성별: </label>
           <input type="radio" name="gender1" />남
           <input type="radio" name="gender1" /> 여 <br /><br />
@@ -47,4 +53,27 @@
       </form>
     </div>
   </body>
+
+  <script>
+    function Checkform() {
+      if (clubInfo.name.value == "" && clubInfo.studentNumber.value == "") {
+        clubInfo.name.focus();
+        alert("이름과 학번은 필수 항목입니다.");
+
+        return false;
+      }
+      if (clubInfo.name.value == "") {
+        clubInfo.name.focus();
+        alert("이름을 입력해 주십시오.");
+
+        return false;
+      }
+      if (clubInfo.studentNumber.value == "") {
+        clubInfo.studentNumber.focus();
+        alert("학번을 입력해 주십시오.");
+
+        return false;
+      }
+    }
+  </script>
 </html>

@@ -17,12 +17,7 @@
         <h2 class="title-name">동아리원 정보</h2>
       </div>
       <div class="addButton-div">
-        <button
-          class="custom-btn btn-16"
-          onclick="location.href='https:hjkim0905-crud-frontend.netlify.app/add'"
-        >
-          Add
-        </button>
+        <button class="custom-btn btn-16" onclick="clickButton()">Add</button>
       </div>
     </div>
     <div class="table-responsive small">
@@ -153,4 +148,11 @@
       </table>
     </div>
   </body>
+
+  <script>
+    function clickButton() {
+      alert("게시물이 추가됩니다");
+      location.href = "https:hjkim0905-crud-frontend.netlify.app/add";
+    }
+  </script>
 </html>
