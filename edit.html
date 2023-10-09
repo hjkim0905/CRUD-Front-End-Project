@@ -230,6 +230,7 @@
               type="submit"
               class="button btnPush btnLightBlue"
               value="수정"
+              onclick="clickSubmit()"
             />
             <input
               type="reset"
@@ -260,6 +261,16 @@
         clubInfo.studentNumber.focus();
         alert("학번을 입력해 주십시오.");
 
+        return false;
+      }
+    }
+    function clickSubmit() {
+      var str = "게시물을 수정할까요?";
+      var click = confirm(str);
+      if (click == true) {
+        return true;
+      } else {
+        event.preventDefault();
         return false;
       }
     }

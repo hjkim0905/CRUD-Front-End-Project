@@ -299,7 +299,14 @@
     }
     function clickButtonDelete() {
       var str = "게시물을 삭제할까요?";
-      confirm(str);
+      var click = confirm(str);
+      if (click == true) {
+        alert("삭제하겠습니다.");
+        return true;
+      } else {
+        event.preventDefault();
+        return false;
+      }
     }
   </script>
 </html>
