@@ -1,0 +1,64 @@
+.navbar {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0.2rem 0.6rem;
+}
+
+.navbar-dark .navbar-brand {
+  color: #fff;
+  font-size: 160%;
+}
+
+.bg-dark {
+  background-color: #343a40 !important;
+}
+
+.container-fluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* 스마트폰용 RWD */
+@media screen and (max-width: 767px) {
+  /* 표 스타일 조정 */
+  .table th,
+  .table td {
+    padding: 8px;
+    font-size: 14px; /* 폰트 크기 축소 */
+  }
+
+  /* Add 버튼 스타일 조정 */
+  .custom-btn.btn-16 {
+    width: 100%;
+    font-size: 14px;
+    margin: 10px 0;
+    padding: 10px;
+  }
+}
+
+/* 데스크톱용 RWD */
+@media screen and (min-width: 768px) {
+  /* 표 스타일 조정 */
+  .table th,
+  .table td {
+    padding: 12px;
+    font-size: 16px; /* 폰트 크기 확대 */
+  }
+
+  /* Add 버튼 스타일 조정 */
+  .custom-btn.btn-16 {
+    width: 130px;
+    font-size: 18px;
+    margin: 10px;
+  }
+}

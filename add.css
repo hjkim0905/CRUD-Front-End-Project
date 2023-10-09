@@ -67,3 +67,8 @@ body {
   margin-top: 15px;
   margin-bottom: 5px;
 }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
