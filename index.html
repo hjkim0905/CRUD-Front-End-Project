@@ -1,171 +1,176 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>index</title>
-    <link rel="stylesheet" href="index.css" />
-    <link rel="stylesheet" href="my.css" />
-  </head>
-  <body>
-    <nav class="navbar navbar-dark bg-dark" aria-label="navbar">
-      <div class="container-fluid">
-        <p class="navbar-brand"><a href="index.html">실프 CLUB</a></p>
-      </div>
-    </nav>
-    <div class="div-top">
-      <div class="title-div">
-        <h2 class="title-name">동아리원 정보</h2>
-      </div>
-      <div class="addButton-div">
-        <button class="custom-btn btn-16" onclick="clickButton()">Add</button>
-      </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>index</title>
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="my.css" />
+</head>
+
+<body>
+  <nav class="navbar navbar-dark bg-dark" aria-label="navbar">
+    <div class="container-fluid">
+      <p class="navbar-brand"><a href="index.html">실프 CLUB</a></p>
     </div>
-    <div class="table-responsive small">
-      <table class="table table-striped table-sm">
-        <thead>
-          <tr>
-            <th scope="col">
-              <a href="view.html">번호</a>
-            </th>
-            <th scope="col">
-              <a href="view.html">학번</a>
-            </th>
-            <th scope="col">
-              <a href="view.html">이름</a>
-            </th>
-            <th scope="col">
-              <a href="view.html">성별</a>
-            </th>
-            <th scope="col">
-              <a href="view.html">활용 가능 언어</a>
-            </th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>1</td>
-            <td>21700100</td>
-            <td>김용현</td>
-            <td>남</td>
-            <td>Python</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>21700222</td>
-            <td>박주영</td>
-            <td>남</td>
-            <td>C++, Java</td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>21800523</td>
-            <td>이성주</td>
-            <td>남</td>
-            <td>C, C++, Python, Java</td>
-          </tr>
-          <tr>
-            <td>4</td>
-            <td>21800555</td>
-            <td>김현중</td>
-            <td>남</td>
-            <td>C, C++, Python, Java</td>
-          </tr>
-          <tr>
-            <td>5</td>
-            <td>21900341</td>
-            <td>박민지</td>
-            <td>남</td>
-            <td>C</td>
-          </tr>
-          <tr>
-            <td>6</td>
-            <td>21900455</td>
-            <td>김광일</td>
-            <td>남</td>
-            <td>Java</td>
-          </tr>
-          <tr>
-            <td>7</td>
-            <td>21900563</td>
-            <td>이지윤</td>
-            <td>남</td>
-            <td>Python, Java</td>
-          </tr>
-          <tr>
-            <td>12</td>
-            <td>22000202</td>
-            <td>김현승</td>
-            <td>여</td>
-            <td>C, C++, Python, Java</td>
-          </tr>
-          <tr>
-            <td>8</td>
-            <td>22000435</td>
-            <td>이유현</td>
-            <td>여</td>
-            <td>C, Python</td>
-          </tr>
-          <tr>
-            <td>9</td>
-            <td>22000879</td>
-            <td>김도현</td>
-            <td>여</td>
-            <td>C++, Java</td>
-          </tr>
-          <tr>
-            <td>10</td>
-            <td>22000905</td>
-            <td>김채린</td>
-            <td>여</td>
-            <td>Java</td>
-          </tr>
-
-          <tr>
-            <td>11</td>
-            <td>22100536</td>
-            <td>우병희</td>
-            <td>남</td>
-            <td>C</td>
-          </tr>
-
-          <tr>
-            <td>13</td>
-            <td>22200583</td>
-            <td>이지은</td>
-            <td>여</td>
-            <td>C++, Python, Java</td>
-          </tr>
-          <tr>
-            <td>14</td>
-            <td>22200891</td>
-            <td>박지성</td>
-            <td>남</td>
-            <td>Python</td>
-          </tr>
-          <tr>
-            <td>15</td>
-            <td>22300674</td>
-            <td>박정규</td>
-            <td>남</td>
-            <td>Java</td>
-          </tr>
-          <tr>
-            <td>16</td>
-            <td>22300961</td>
-            <td>진세진</td>
-            <td>남</td>
-            <td>C++</td>
-          </tr>
-        </tbody>
-      </table>
+  </nav>
+  <div class="div-top">
+    <div class="title-div">
+      <h2 class="title-name">동아리원 정보</h2>
     </div>
-  </body>
+    <div class="addButton-div">
+      <button class="custom-btn btn-16" onclick="clickButton()">Add</button>
+    </div>
+  </div>
+  <div class="table-responsive small">
+    <table class="table table-striped table-sm">
+      <thead>
+        <tr>
+          <th scope="col">번호</th>
+          <th scope="col">학번</th>
+          <th scope="col">이름</th>
+          <th scope="col">성별</th>
+          <th scope="col">활용 가능 언어</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>21700100</td>
+          <td><a href="./view.html">김용현</a></td>
+          <td>남</td>
+          <td>Python</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>21700222</td>
+          <td>박주영</td>
+          <td>남</td>
+          <td>C++, Java</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>21800523</td>
+          <td>이성주</td>
+          <td>남</td>
+          <td>C, C++, Python, Java</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>21800555</td>
+          <td>김현중</td>
+          <td>남</td>
+          <td>C, C++, Python, Java</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>21900341</td>
+          <td>박민지</td>
+          <td>남</td>
+          <td>C</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>21900455</td>
+          <td>김광일</td>
+          <td>남</td>
+          <td>Java</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>21900563</td>
+          <td>이지윤</td>
+          <td>남</td>
+          <td>Python, Java</td>
+        </tr>
+        <tr>
+          <td>12</td>
+          <td>22000202</td>
+          <td>김현승</td>
+          <td>여</td>
+          <td>C, C++, Python, Java</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>22000435</td>
+          <td>이유현</td>
+          <td>여</td>
+          <td>C, Python</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>22000879</td>
+          <td>김도현</td>
+          <td>여</td>
+          <td>C++, Java</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>22000905</td>
+          <td>김채린</td>
+          <td>여</td>
+          <td>Java</td>
+        </tr>
 
-  <script>
-    function clickButton() {
-      alert("게시물이 추가됩니다");
-      location.href = "add.html";
+        <tr>
+          <td>11</td>
+          <td>22100536</td>
+          <td>우병희</td>
+          <td>남</td>
+          <td>C</td>
+        </tr>
+
+        <tr>
+          <td>13</td>
+          <td>22200583</td>
+          <td>이지은</td>
+          <td>여</td>
+          <td>C++, Python, Java</td>
+        </tr>
+        <tr>
+          <td>14</td>
+          <td>22200891</td>
+          <td>박지성</td>
+          <td>남</td>
+          <td>Python</td>
+        </tr>
+        <tr>
+          <td>15</td>
+          <td>22300674</td>
+          <td>박정규</td>
+          <td>남</td>
+          <td>Java</td>
+        </tr>
+        <tr>
+          <td>16</td>
+          <td>22300961</td>
+          <td>진세진</td>
+          <td>남</td>
+          <td>C++</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+
+<script>
+  function clickButton() {
+    alert("게시물이 추가됩니다");
+    location.href = "add.html";
+  }
+
+  window.addEventListener('load', function () {
+    var tdElements = document.querySelectorAll('td');
+    for (var i = 0; i < tdElements.length; i++) {
+      var tdText = tdElements[i].textContent;
+      var linkElement = document.createElement('a');
+      linkElement.href = './view.html';
+      linkElement.textContent = tdText;
+      tdElements[i].textContent = '';
+      tdElements[i].appendChild(linkElement);
     }
-  </script>
+  });
+</script>
+
 </html>

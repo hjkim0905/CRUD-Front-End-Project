@@ -1,90 +1,78 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>add</title>
-    <link href="add.css" id="stylesheet" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="my.css" />
-  </head>
-  <body>
-    <nav class="navbar navbar-dark bg-dark" aria-label="navbar">
-      <div class="container-fluid">
-        <p class="navbar-brand"><a href="index.html">실프 CLUB</a></p>
-      </div>
-    </nav>
-    <div class="div-style">
-      <h1>정보 추가</h1>
-      <form
-        name="clubInfo"
-        action="/club_info.php"
-        method="post"
-        onsubmit="return Checkform()"
-      >
-        <fieldset>
-          <legend>개인정보</legend>
-          <label>이름: </label><input name="name" type="text" /><br /><br />
-          <label>학번: </label
-          ><input name="studentNumber" type="text" /><br /><br />
-          <label>성별: </label>
-          <input type="radio" name="gender1" />남
-          <input type="radio" name="gender1" /> 여 <br /><br />
-          <label>생년월일: </label>
-          <input type="date" /><br /><br />
-          <label>통신사: </label>
-          <select name="telecom">
-            <option value="KT">KT</option>
-            <option value="SKT">SKT</option>
-            <option value="LG">LG</option>
-          </select>
-          <label>전화번호: </label><input type="text" /><br /><br />
-          <label>이메일 주소: </label><input type="text" /><br /><br />
-          <label>활용 가능 언어: </label><input type="checkbox" />C
-          <input type="checkbox" />C++ <input type="checkbox" />Python
-          <input type="checkbox" />Java <br /><br />
-          <br />
-          <div id="submitStyle">
-            <input
-              type="submit"
-              class="button btnPush btnLightBlue"
-              value="추가"
-              onclick="clickSubmit()"
-            />
-            <input
-              type="reset"
-              class="button btnPush btnLightBlue"
-              value="초기화"
-            />
-          </div>
-        </fieldset>
-      </form>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>add</title>
+  <link href="add.css" id="stylesheet" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="my.css" />
+</head>
+
+<body>
+  <nav class="navbar navbar-dark bg-dark" aria-label="navbar">
+    <div class="container-fluid">
+      <p class="navbar-brand"><a href="index.html">실프 CLUB</a></p>
     </div>
-  </body>
+  </nav>
+  <div class="div-style">
+    <h1>정보 추가</h1>
+    <form name="clubInfo" action="/club_info.php" method="post" onsubmit="return Checkform()">
+      <fieldset>
+        <legend>개인정보</legend>
+        <label>이름: </label><input name="name" type="text" /><br /><br />
+        <label>학번: </label><input name="studentNumber" type="text" /><br /><br />
+        <label>성별: </label>
+        <input type="radio" name="gender1" />남
+        <input type="radio" name="gender1" /> 여 <br /><br />
+        <label>생년월일: </label>
+        <input type="date" /><br /><br />
+        <label>통신사: </label>
+        <select name="telecom">
+          <option value="KT">KT</option>
+          <option value="SKT">SKT</option>
+          <option value="LG">LG</option>
+        </select>
+        <label>전화번호: </label><input type="text" /><br /><br />
+        <label>이메일 주소: </label><input type="text" /><br /><br />
+        <label>활용 가능 언어: </label><input type="checkbox" />C
+        <input type="checkbox" />C++ <input type="checkbox" />Python
+        <input type="checkbox" />Java <br /><br />
+        <br />
+        <div id="submitStyle">
+          <input type="submit" class="button btnPush btnLightBlue" value="추가" onclick="clickSubmit()" />
+          <input type="reset" class="button btnPush btnLightBlue" value="초기화" />
+        </div>
+      </fieldset>
+    </form>
+  </div>
+</body>
 
-  <script>
-    function Checkform() {
-      if (clubInfo.name.value == "" && clubInfo.studentNumber.value == "") {
-        clubInfo.name.focus();
-        alert("이름과 학번은 필수 항목입니다.");
+<script>
+  function Checkform() {
+    if (clubInfo.name.value == "" && clubInfo.studentNumber.value == "") {
+      clubInfo.name.focus();
+      alert("이름과 학번은 필수 항목입니다.");
 
-        return false;
-      }
-      if (clubInfo.name.value == "") {
-        clubInfo.name.focus();
-        alert("이름을 입력해 주십시오.");
-
-        return false;
-      }
-      if (clubInfo.studentNumber.value == "") {
-        clubInfo.studentNumber.focus();
-        alert("학번을 입력해 주십시오.");
-
-        return false;
-      }
+      return false;
     }
+    if (clubInfo.name.value == "") {
+      clubInfo.name.focus();
+      alert("이름을 입력해 주십시오.");
 
-    function clickSubmit() {
-      alert("추가합니다.");
+      return false;
     }
-  </script>
+    if (clubInfo.studentNumber.value == "") {
+      clubInfo.studentNumber.focus();
+      alert("학번을 입력해 주십시오.");
+
+      return false;
+    }
+  }
+
+  function clickSubmit() {
+    alert("추가합니다.");
+  }
+</script>
+
 </html>

@@ -1,313 +1,253 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>view</title>
-    <link rel="stylesheet" href="view.css" />
-    <link rel="stylesheet" href="my.css" />
-  </head>
-  <body>
-    <nav class="navbar navbar-dark bg-dark" aria-label="navbar">
-      <div class="container-fluid">
-        <p class="navbar-brand"><a href="index.html">실프 CLUB</a></p>
-      </div>
-    </nav>
-    <div class="div-top">
-      <div class="title-div">
-        <h2 class="title-name">동아리원 정보</h2>
-      </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>view</title>
+  <link rel="stylesheet" href="view.css" />
+  <link rel="stylesheet" href="my.css" />
+</head>
+
+<body>
+  <nav class="navbar navbar-dark bg-dark" aria-label="navbar">
+    <div class="container-fluid">
+      <p class="navbar-brand"><a href="index.html">실프 CLUB</a></p>
     </div>
-    <div class="table-responsive small">
-      <table class="table table-striped table-sm">
-        <thead>
-          <tr>
-            <th scope="col">번호</th>
-            <th scope="col">학번</th>
-            <th scope="col">이름</th>
-            <th scope="col">성별</th>
-            <th scope="col">활용 가능 언어</th>
-            <th scope="col">전화번호</th>
-            <th scope="col">생년월일</th>
-            <th scope="col">이메일</th>
-            <th scope="col">Menu</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>1</td>
-            <td>21700100</td>
-            <td>김용현</td>
-            <td>남</td>
-            <td>Python</td>
-            <td>010-1234-5678</td>
-            <td>96/04/15</td>
-            <td>example1@gmail.com</td>
-            <td>
-              <button><a onclick="clickButtonEdit()">📝</a></button
-              >&nbsp;&nbsp;&nbsp;&nbsp;<button onclick="clickButtonDelete()">
-                🗑
-              </button>
-            </td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>21700222</td>
-            <td>박주영</td>
-            <td>남</td>
-            <td>C++, Java</td>
-            <td>010-9876-5432</td>
-            <td>97/08/23</td>
-            <td>testuser1@naver.com</td>
-            <td>
-              <button><a onclick="clickButtonEdit()">📝</a></button
-              >&nbsp;&nbsp;&nbsp;&nbsp;<button onclick="clickButtonDelete()">
-                🗑
-              </button>
-            </td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>21800523</td>
-            <td>이성주</td>
-            <td>남</td>
-            <td>C, C++, Python, Java</td>
-            <td>010-5678-1234</td>
-            <td>98/11/07</td>
-            <td>myemail1@hanmail.net</td>
-            <td>
-              <button><a onclick="clickButtonEdit()">📝</a></button
-              >&nbsp;&nbsp;&nbsp;&nbsp;<button onclick="clickButtonDelete()">
-                🗑
-              </button>
-            </td>
-          </tr>
-          <tr>
-            <td>4</td>
-            <td>21800555</td>
-            <td>김현중</td>
-            <td>남</td>
-            <td>C, C++, Python, Java</td>
-            <td>010-4321-8765</td>
-            <td>96/05/03</td>
-            <td>randomemail2@gmail.com</td>
-            <td>
-              <button><a onclick="clickButtonEdit()">📝</a></button
-              >&nbsp;&nbsp;&nbsp;&nbsp;<button onclick="clickButtonDelete()">
-                🗑
-              </button>
-            </td>
-          </tr>
-          <tr>
-            <td>5</td>
-            <td>21900341</td>
-            <td>박민지</td>
-            <td>남</td>
-            <td>C</td>
-            <td>010-8765-4321</td>
-            <td>99/10/12</td>
-            <td>user2@naver.com</td>
-            <td>
-              <button><a onclick="clickButtonEdit()">📝</a></button
-              >&nbsp;&nbsp;&nbsp;&nbsp;<button onclick="clickButtonDelete()">
-                🗑
-              </button>
-            </td>
-          </tr>
-          <tr>
-            <td>6</td>
-            <td>21900455</td>
-            <td>김광일</td>
-            <td>남</td>
-            <td>Java</td>
-            <td>010-3456-7890</td>
-            <td>01/02/18</td>
-            <td>email2@hanmail.net</td>
-            <td>
-              <button><a onclick="clickButtonEdit()">📝</a></button
-              >&nbsp;&nbsp;&nbsp;&nbsp;<button onclick="clickButtonDelete()">
-                🗑
-              </button>
-            </td>
-          </tr>
-          <tr>
-            <td>7</td>
-            <td>21900563</td>
-            <td>이지윤</td>
-            <td>남</td>
-            <td>Python, Java</td>
-            <td>010-6543-2109</td>
-            <td>96/09/30</td>
-            <td>sampleemail3@gmail.com</td>
-            <td>
-              <button><a onclick="clickButtonEdit()">📝</a></button
-              >&nbsp;&nbsp;&nbsp;&nbsp;<button onclick="clickButtonDelete()">
-                🗑
-              </button>
-            </td>
-          </tr>
-          <tr>
-            <td>8</td>
-            <td>22000435</td>
-            <td>이유현</td>
-            <td>여</td>
-            <td>C, Python</td>
-            <td>010-7890-3456</td>
-            <td>02/01/06</td>
-            <td>user3@naver.com</td>
-            <td>
-              <button><a onclick="clickButtonEdit()">📝</a></button
-              >&nbsp;&nbsp;&nbsp;&nbsp;<button onclick="clickButtonDelete()">
-                🗑
-              </button>
-            </td>
-          </tr>
-          <tr>
-            <td>9</td>
-            <td>22000879</td>
-            <td>김도현</td>
-            <td>여</td>
-            <td>C++, Java</td>
-            <td>010-2345-6789</td>
-            <td>97/03/14</td>
-            <td>email3@hanmail.net</td>
-            <td>
-              <button><a onclick="clickButtonEdit()">📝</a></button
-              >&nbsp;&nbsp;&nbsp;&nbsp;<button onclick="clickButtonDelete()">
-                🗑
-              </button>
-            </td>
-          </tr>
-          <tr>
-            <td>10</td>
-            <td>22000905</td>
-            <td>김채린</td>
-            <td>여</td>
-            <td>Java</td>
-            <td>010-8901-2345</td>
-            <td>00/07/28</td>
-            <td>andom4@gmail.com</td>
-            <td>
-              <button><a onclick="clickButtonEdit()">📝</a></button
-              >&nbsp;&nbsp;&nbsp;&nbsp;<button onclick="clickButtonDelete()">
-                🗑
-              </button>
-            </td>
-          </tr>
-          <tr>
-            <td>11</td>
-            <td>22100536</td>
-            <td>우병희</td>
-            <td>남</td>
-            <td>C</td>
-            <td>010-6789-0123</td>
-            <td>98/12/09</td>
-            <td>testuser4@naver.com</td>
-            <td>
-              <button><a onclick="clickButtonEdit()">📝</a></button
-              >&nbsp;&nbsp;&nbsp;&nbsp;<button onclick="clickButtonDelete()">
-                🗑
-              </button>
-            </td>
-          </tr>
-          <tr>
-            <td>12</td>
-            <td>22000202</td>
-            <td>김현승</td>
-            <td>여</td>
-            <td>C, C++, Python, Java</td>
-            <td>010-3210-9876</td>
-            <td>01/05/22</td>
-            <td>myemail4@hanmail.net</td>
-            <td>
-              <button><a onclick="clickButtonEdit()">📝</a></button
-              >&nbsp;&nbsp;&nbsp;&nbsp;<button onclick="clickButtonDelete()">
-                🗑
-              </button>
-            </td>
-          </tr>
-          <tr>
-            <td>13</td>
-            <td>22200583</td>
-            <td>이지은</td>
-            <td>여</td>
-            <td>C++, Python, Java</td>
-            <td>010-4567-8901</td>
-            <td>99/01/31</td>
-            <td>example5@gmail.com</td>
-            <td>
-              <button><a onclick="clickButtonEdit()">📝</a></button
-              >&nbsp;&nbsp;&nbsp;&nbsp;<button onclick="clickButtonDelete()">
-                🗑
-              </button>
-            </td>
-          </tr>
-          <tr>
-            <td>14</td>
-            <td>22200891</td>
-            <td>박지성</td>
-            <td>남</td>
-            <td>Python</td>
-            <td>010-5432-1098</td>
-            <td>96/10/08</td>
-            <td>randomemail5@naver.com</td>
-            <td>
-              <button><a onclick="clickButtonEdit()">📝</a></button
-              >&nbsp;&nbsp;&nbsp;&nbsp;<button onclick="clickButtonDelete()">
-                🗑
-              </button>
-            </td>
-          </tr>
-          <tr>
-            <td>15</td>
-            <td>22300674</td>
-            <td>박정규</td>
-            <td>남</td>
-            <td>Java</td>
-            <td>010-9012-3456</td>
-            <td>02/04/04</td>
-            <td>testuser5@hanmail.net</td>
-            <td>
-              <button><a onclick="clickButtonEdit()">📝</a></button
-              >&nbsp;&nbsp;&nbsp;&nbsp;<button onclick="clickButtonDelete()">
-                🗑
-              </button>
-            </td>
-          </tr>
-          <tr>
-            <td>16</td>
-            <td>22300961</td>
-            <td>진세진</td>
-            <td>남</td>
-            <td>C++</td>
-            <td>010-7890-1234</td>
-            <td>97/06/19</td>
-            <td>myemail6@gmail.com</td>
-            <td>
-              <button><a onclick="clickButtonEdit()">📝</a></button
-              >&nbsp;&nbsp;&nbsp;&nbsp;<button onclick="clickButtonDelete()">
-                🗑
-              </button>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+  </nav>
+  <br />
+  <form name="clubInfo" action="./edit.html">
+    <fieldset>
+      <legend>개인정보</legend>
+      <label>이름: </label><input name="name" type="text" value="김용현" disabled /><br /><br />
+      <label>학번: </label><input name="studentNumber" type="text" value="21700100" disabled /><br /><br />
+      <label>성별: </label>
+      <input type="radio" name="gender1" checked="checked" disabled />남
+      <input type="radio" name="gender1" disabled /> 여 <br /><br />
+      <label>생년월일: </label>
+      <input type="date" value="1996-04-15" disabled /><br /><br />
+      <label>통신사: </label>
+      <select name="telecom" disabled>
+        <option value="KT">KT</option>
+        <option value="SKT">SKT</option>
+        <option value="LG">LG</option>
+      </select>
+      <label>전화번호: </label><input type="text" value="010-1234-5678" disabled /><br /><br />
+      <label>이메일 주소: </label><input type="text" value="example1@gmail.com" disabled /><br /><br />
+      <label>활용 가능 언어: </label><input type="checkbox" disabled />C
+      <input type="checkbox" disabled />C++
+      <input type="checkbox" checked="checked" disabled />Python
+      <input type="checkbox" disabled />Java <br /><br />
+      <br />
+      <div id="submitStyle">
+        <input type="submit" class="button btnPush btnLightBlue" value="수정" onclick="clickButtonEdit()" />
+        <input type="reset" class="button btnPush btnLightBlue" value="삭제" onclick="clickButtonDelete()" />
+      </div>
+    </fieldset>
+  </form>
+
+  <br />
+  <hr />
+  <div class="div-top">
+    <div class="title-div">
+      <h2 class="title-name">동아리원 정보</h2>
     </div>
-  </body>
-  <script>
-    function clickButtonEdit() {
-      location.href = "edit.html";
+  </div>
+  <div class="table-responsive small">
+    <table class="table table-striped table-sm">
+      <thead>
+        <tr>
+          <th scope="col">번호</th>
+          <th scope="col">학번</th>
+          <th scope="col">이름</th>
+          <th scope="col">성별</th>
+          <th scope="col">활용 가능 언어</th>
+          <th scope="col">전화번호</th>
+          <th scope="col">생년월일</th>
+          <th scope="col">이메일</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>21700100</td>
+          <td>김용현</td>
+          <td>남</td>
+          <td>Python</td>
+          <td>010-1234-5678</td>
+          <td>96/04/15</td>
+          <td>example1@gmail.com</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>21700222</td>
+          <td>박주영</td>
+          <td>남</td>
+          <td>C++, Java</td>
+          <td>010-9876-5432</td>
+          <td>97/08/23</td>
+          <td>testuser1@naver.com</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>21800523</td>
+          <td>이성주</td>
+          <td>남</td>
+          <td>C, C++, Python, Java</td>
+          <td>010-5678-1234</td>
+          <td>98/11/07</td>
+          <td>myemail1@hanmail.net</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>21800555</td>
+          <td>김현중</td>
+          <td>남</td>
+          <td>C, C++, Python, Java</td>
+          <td>010-4321-8765</td>
+          <td>96/05/03</td>
+          <td>randomemail2@gmail.com</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>21900341</td>
+          <td>박민지</td>
+          <td>남</td>
+          <td>C</td>
+          <td>010-8765-4321</td>
+          <td>99/10/12</td>
+          <td>user2@naver.com</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>21900455</td>
+          <td>김광일</td>
+          <td>남</td>
+          <td>Java</td>
+          <td>010-3456-7890</td>
+          <td>01/02/18</td>
+          <td>email2@hanmail.net</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>21900563</td>
+          <td>이지윤</td>
+          <td>남</td>
+          <td>Python, Java</td>
+          <td>010-6543-2109</td>
+          <td>96/09/30</td>
+          <td>sampleemail3@gmail.com</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>22000435</td>
+          <td>이유현</td>
+          <td>여</td>
+          <td>C, Python</td>
+          <td>010-7890-3456</td>
+          <td>02/01/06</td>
+          <td>user3@naver.com</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>22000879</td>
+          <td>김도현</td>
+          <td>여</td>
+          <td>C++, Java</td>
+          <td>010-2345-6789</td>
+          <td>97/03/14</td>
+          <td>email3@hanmail.net</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>22000905</td>
+          <td>김채린</td>
+          <td>여</td>
+          <td>Java</td>
+          <td>010-8901-2345</td>
+          <td>00/07/28</td>
+          <td>andom4@gmail.com</td>
+        </tr>
+        <tr>
+          <td>11</td>
+          <td>22100536</td>
+          <td>우병희</td>
+          <td>남</td>
+          <td>C</td>
+          <td>010-6789-0123</td>
+          <td>98/12/09</td>
+          <td>testuser4@naver.com</td>
+        </tr>
+        <tr>
+          <td>12</td>
+          <td>22000202</td>
+          <td>김현승</td>
+          <td>여</td>
+          <td>C, C++, Python, Java</td>
+          <td>010-3210-9876</td>
+          <td>01/05/22</td>
+          <td>myemail4@hanmail.net</td>
+        </tr>
+        <tr>
+          <td>13</td>
+          <td>22200583</td>
+          <td>이지은</td>
+          <td>여</td>
+          <td>C++, Python, Java</td>
+          <td>010-4567-8901</td>
+          <td>99/01/31</td>
+          <td>example5@gmail.com</td>
+        </tr>
+        <tr>
+          <td>14</td>
+          <td>22200891</td>
+          <td>박지성</td>
+          <td>남</td>
+          <td>Python</td>
+          <td>010-5432-1098</td>
+          <td>96/10/08</td>
+          <td>randomemail5@naver.com</td>
+        </tr>
+        <tr>
+          <td>15</td>
+          <td>22300674</td>
+          <td>박정규</td>
+          <td>남</td>
+          <td>Java</td>
+          <td>010-9012-3456</td>
+          <td>02/04/04</td>
+          <td>testuser5@hanmail.net</td>
+        </tr>
+        <tr>
+          <td>16</td>
+          <td>22300961</td>
+          <td>진세진</td>
+          <td>남</td>
+          <td>C++</td>
+          <td>010-7890-1234</td>
+          <td>97/06/19</td>
+          <td>myemail6@gmail.com</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+<script>
+  function clickButtonEdit() {
+    location.href = "./edit.html";
+  }
+  function clickButtonDelete() {
+    var str = "게시물을 삭제할까요?";
+    var click = confirm(str);
+    if (click == true) {
+      alert("삭제하겠습니다.");
+      location.href = "./index.html";
+      return true;
+    } else {
+      event.preventDefault();
+      return false;
     }
-    function clickButtonDelete() {
-      var str = "게시물을 삭제할까요?";
-      var click = confirm(str);
-      if (click == true) {
-        alert("삭제하겠습니다.");
-        return true;
-      } else {
-        event.preventDefault();
-        return false;
-      }
-    }
-  </script>
+  }
+</script>
+
 </html>

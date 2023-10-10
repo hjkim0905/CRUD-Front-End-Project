@@ -1,22 +1,3 @@
-fieldset {
-  width: 350px;
-  padding: 20px;
-  padding-bottom: 30px;
-  padding-right: 30px;
-  border: 3px solid paleturquoise;
-  margin: 0 auto;
-}
-
-h1 {
-  text-align: center;
-}
-
-#submitStyle {
-  text-align: center;
-  display: flex;
-  justify-content: center;
-}
-
 body {
   background: rgb(100, 100, 101); /*그라데이션 배경 삽입*/
   background: linear-gradient(
@@ -71,4 +52,23 @@ body {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+fieldset {
+  width: 350px;
+  padding: 20px;
+  padding-bottom: 30px;
+  padding-right: 30px;
+  border: 3px solid paleturquoise;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+#submitStyle {
+  text-align: center;
+  display: flex;
+  justify-content: center;
 }
