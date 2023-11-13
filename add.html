@@ -23,21 +23,21 @@
         <label>이름: </label><input name="name" type="text" /><br /><br />
         <label>학번: </label><input name="studentNumber" type="text" /><br /><br />
         <label>성별: </label>
-        <input type="radio" name="gender1" />남
-        <input type="radio" name="gender1" /> 여 <br /><br />
+        <input type="radio" name="gender" />남
+        <input type="radio" name="gender" /> 여 <br /><br />
         <label>생년월일: </label>
-        <input type="date" /><br /><br />
+        <input type="date" name="birthday" /><br /><br />
         <label>통신사: </label>
         <select name="telecom">
           <option value="KT">KT</option>
           <option value="SKT">SKT</option>
           <option value="LG">LG</option>
         </select>
-        <label>전화번호: </label><input type="text" /><br /><br />
-        <label>이메일 주소: </label><input type="text" /><br /><br />
-        <label>활용 가능 언어: </label><input type="checkbox" />C
-        <input type="checkbox" />C++ <input type="checkbox" />Python
-        <input type="checkbox" />Java <br /><br />
+        <label>전화번호: </label><input type="text" name="phoneNumber" /><br /><br />
+        <label>이메일 주소: </label><input type="text" name="email" /><br /><br />
+        <label>활용 가능 언어: </label><input type="checkbox" name="isCheck" />C
+        <input type="checkbox" />C++ <input type="checkbox" name="isCheck" />Python
+        <input type="checkbox" name="isCheck" />Java <br /><br />
         <br />
         <div id="submitStyle">
           <input type="submit" class="button btnPush btnLightBlue" value="추가" onclick="clickSubmit()" />
